@@ -230,7 +230,7 @@ function AppList() {
         <div className='app current'  onClick={() => openPopUp('sewingsecondary')}>
           <img src={Secondary} className='img-language' alt='html' />
           <ul className='app-sub'>
-            <li className='current'>Sewing Secondary</li>
+            <li className='current'>Sewing Finishing</li>
           </ul>
           <Tooltip className='tooltip' message='Aplikasi untuk Input Proses Secondary setelah proses Endline' position='top'/>
         </div>  
@@ -440,11 +440,11 @@ function AppList() {
 
         {/* SewingSecondary */}
         <div className='list' ref={sewingSecondaryRef}>
-          <h1 style={{width: '100%', textAlign: 'center', color: '#fbfbfb', textShadow: '-1px 1px 3px #000'}}>Sewing Secondary</h1>
+          <h1 style={{width: '100%', textAlign: 'center', color: '#fbfbfb', textShadow: '-1px 1px 3px #000'}}>Sewing Finishing</h1>
           <a href='http://10.10.5.12:8001/nds_secondary' target='_blank' rel='noreferrer' className='app current'>
             <img src={Regular} className='img-language' alt='html' />
             <ul className='app-sub'>
-              <li className='current'>Sewing Secondary Manual</li>
+              <li className='current'>Sewing Finishing Manual</li>
             </ul>
             <Tooltip className='tooltip' message='Aplikasi untuk Input Secondary Masuk/Secondary Keluar setelah proses Endline secara Manual.' position='top'/>
           </a>
@@ -458,7 +458,7 @@ function AppList() {
           <a href='http://10.10.5.12:8001/nds_secondary_qr' target='_blank' rel='noreferrer' className='app current'>
             <img src={QrHardware} className='img-language' alt='html' />
             <ul className='app-sub'>
-              <li className='current'>Sewing Secondary QR Hardware</li>
+              <li className='current'>Sewing Finishing QR Hardware</li>
             </ul>
             <Tooltip className='tooltip' message='Aplikasi untuk Input Secondary Masuk/Secondary Keluar setelah proses Endline, menggunakan Alat Scan.' position='top'/>
           </a>
