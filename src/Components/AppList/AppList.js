@@ -278,6 +278,13 @@ function AppList() {
             </ul>
             <Tooltip className='tooltip' message='Aplikasi untuk akses data QR di produksi.' position='top'/>
           </a>
+          <a href='http://10.10.5.62:8000/bintex-checker' target='_blank' rel='noreferrer' className='app current'>
+            <img src={Qr} className='img-language' alt='html' />
+            <ul className='app-sub'>
+              <li className='current'>Bintex Checker</li>
+            </ul>
+            <Tooltip className='tooltip' message='Aplikasi untuk akses data Bintex Checker.' position='top'/>
+          </a>
           <a href='http://10.10.5.111/mutasi_karyawan' target='_blank' rel='noreferrer' className='app current' style={{display: 'none'}}>
             <img src={ManageEmployee} className='img-language' alt='html' />
             <ul className='app-sub'>
