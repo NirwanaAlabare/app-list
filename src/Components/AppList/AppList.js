@@ -278,7 +278,7 @@ function AppList() {
             </ul>
             <Tooltip className='tooltip' message='Aplikasi untuk akses data QR di produksi.' position='top'/>
           </a>
-          <a href='http://10.10.5.62:8000/bintex-checker' target='_blank' rel='noreferrer' className='app current'>
+          <a href='https://10.10.5.62/bintex-checker' target='_blank' rel='noreferrer' className='app current'>
             <img src={Qr} className='img-language' alt='html' />
             <ul className='app-sub'>
               <li className='current'>Bintex Checker</li>
@@ -337,13 +337,13 @@ function AppList() {
         {/* FinishLine */}
         <div className='list' ref={finishLineRef}>
           <h1 style={{width: '100%', textAlign: 'center', color: '#fbfbfb', textShadow: '-1px 1px 3px #000'}}>QC FINISHLINE</h1>
-          <a href='http://10.10.5.62:8000/nds_finishing' target='_blank' rel='noreferrer' className='app current'>
+          {/* <a href='http://10.10.5.62:8000/nds_finishing' target='_blank' rel='noreferrer' className='app current'>
             <img src={Qr} className='img-language' alt='html' />
             <ul className='app-sub'>
               <li className='current'>QC FinishLine Manual/Scan</li>
             </ul>
             <Tooltip className='tooltip' message='Aplikasi untuk input output Sewing di Finishing secara Manual maupun Scan.' position='top'/>
-          </a>
+          </a> */}
           <a href='http://10.10.5.12:8001/nds_pc' target='_blank' rel='noreferrer' className='app current'>
             <img src={Regular} className='img-language' alt='html' />
             <ul className='app-sub'>
