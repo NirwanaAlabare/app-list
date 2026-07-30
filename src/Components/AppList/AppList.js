@@ -16,6 +16,7 @@ function AppList() {
   const linkSelectionRef = useRef()
   const linkSelectionTitleRef = useRef()
   const sewingSecondaryRef = useRef();
+  const opnameRef = useRef();
 
   const [open, setOpen] = useState(false)
 
@@ -45,6 +46,7 @@ function AppList() {
       rejectInOutRef.current.style.display = 'none'
       sewingSecondaryRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'endline') {
       endLineRef.current.style.display = 'flex'
       finishLineRef.current.style.display = 'none'
@@ -56,6 +58,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'finishline') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'flex'
@@ -67,6 +70,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'packingline') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -78,6 +82,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'sewingreport') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -89,6 +94,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'sewingdashboard') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -100,6 +106,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'defectinout') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -111,6 +118,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'rejectinout') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -121,6 +129,7 @@ function AppList() {
       rejectInOutRef.current.style.display = 'flex'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     } else if (selected === 'sewingsecondary') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -132,6 +141,20 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'flex'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
+    } else if (selected === 'opname') {
+      endLineRef.current.style.display = 'none'
+      finishLineRef.current.style.display = 'none'
+      packingLineRef.current.style.display = 'none'
+      sewingReportRef.current.style.display = 'none'
+      sewingDashboardRef.current.style.display = 'none'
+      defectInOutRef.current.style.display = 'none'
+      rejectInOutRef.current.style.display = 'none'
+      sewingSecondaryRef.current.style.display = 'none'
+      ndsRef.current.style.display = 'none'
+      linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'flex'
     } else {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -143,6 +166,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
+      opnameRef.current.style.display = 'none'
     }
   }
 
@@ -249,6 +273,14 @@ function AppList() {
             <li className='current'>Sewing Dashboard</li>
           </ul>
           <Tooltip className='tooltip' message='Dashboard untuk Output Sewing' position='top'/>
+        </div>
+
+        <div className='app current' onClick={() => openPopUp('opname')}>
+          <img src={QrHardware} className='img-language' alt='css' />
+          <ul className='app-sub'>
+            <li className='current'>Opname</li>
+          </ul>
+          <Tooltip className='tooltip' message='Aplikasi untuk input Opname' position='top'/>
         </div>
 
         <a className='app current' style={{ display: 'none' }} href='http://10.10.5.62:8000/nds_simple_docs' target='_blank' rel='noreferrer'>
@@ -516,6 +548,32 @@ function AppList() {
           </a>
         </div>
 
+        {/* Opname */}
+        <div className='list' ref={opnameRef}>
+          <h1 style={{width: '100%', textAlign: 'center', color: '#fbfbfb', textShadow: '-1px 1px 3px #000'}}>OPNAME</h1>
+          <a href='http://10.10.5.62:8000/stock_opname/public/index.php/sewing-so' target='_blank' rel='noreferrer' className='app current'>
+            <img src={EndLine} className='img-language' alt='html' />
+            <ul className='app-sub'>
+              <li className='current'>Opname Sewing</li>
+            </ul>
+            <Tooltip className='tooltip' message='Opname Sewing' position='top'/>
+          </a>
+          <a href='http://10.10.5.62:8000/stock_opname/public/index.php/packing' target='_blank' rel='noreferrer' className='app current'>
+            <img src={PackingLine} className='img-language' alt='html' />
+            <ul className='app-sub'>
+              <li className='current'>Opname Packing</li>
+            </ul>
+            <Tooltip className='tooltip' message='Opname Packing ' position='top'/>
+          </a>
+          <a href='http://10.10.5.62:3001/opname/kain-cutting' target='_blank' rel='noreferrer' className='app current'>
+            <img src={DefectInOut} className='img-language' alt='html' />
+            <ul className='app-sub'>
+              <li className='current'>Opname Cutting</li>
+            </ul>
+            <Tooltip className='tooltip' message='Opname Cutting' position='top'/>
+          </a>
+        </div>
+        
         <div className='close' onClick={openPopUp}><GrClose size={30} /></div>
       </div>
 
