@@ -275,13 +275,13 @@ function AppList() {
           <Tooltip className='tooltip' message='Dashboard untuk Output Sewing' position='top'/>
         </div>
 
-        <div className='app current' onClick={() => openPopUp('opname')}>
+        <a className='app current' href='http://10.10.5.62:8000/stock_opname_new/public/index.php' target='_blank' rel='noreferrer'>
           <img src={QrHardware} className='img-language' alt='css' />
           <ul className='app-sub'>
             <li className='current'>Opname</li>
           </ul>
           <Tooltip className='tooltip' message='Aplikasi untuk input Opname' position='top'/>
-        </div>
+        </a>
 
         <a className='app current' style={{ display: 'none' }} href='http://10.10.5.62:8000/nds_simple_docs' target='_blank' rel='noreferrer'>
           <img src={Doc} className='img-language' alt='html' />
@@ -315,7 +315,7 @@ function AppList() {
             <ul className='app-sub'>
               <li className='current'>Bintex Checker</li>
             </ul>
-            <Tooltip className='tooltip' message='Aplikasi untuk akses data Bintex Checker.' position='top'/>
+            <Tooltip className='tooltip' message='Aplikasi untuk akses data Bintex.' position='top'/>
           </a>
           <a href='http://10.10.5.111/mutasi_karyawan' target='_blank' rel='noreferrer' className='app current' style={{display: 'none'}}>
             <img src={ManageEmployee} className='img-language' alt='html' />
@@ -323,6 +323,13 @@ function AppList() {
               <li className='current'>Mutasi Karyawan</li>
             </ul>
             <Tooltip className='tooltip' message='Aplikasi untuk merekam input data mutasi karyawan.' position='top'/>
+          </a>
+          <a href='http://10.10.5.62:3001/stocker-checker' target='_blank' rel='noreferrer' className='app current'>
+            <img src={Qr} className='img-language' alt='html' />
+            <ul className='app-sub'>
+              <li className='current'>Stocker Checker</li>
+            </ul>
+            <Tooltip className='tooltip' message='Aplikasi untuk akses data Stocker.' position='top'/>
           </a>
         </div>
 
@@ -549,14 +556,14 @@ function AppList() {
         </div>
 
         {/* Opname */}
-        <div className='list' ref={opnameRef}>
+        {/* <div className='list' ref={opnameRef}>
           <h1 style={{width: '100%', textAlign: 'center', color: '#fbfbfb', textShadow: '-1px 1px 3px #000'}}>OPNAME</h1>
-          <a href='http://10.10.5.62:8000/stock_opname/public/index.php/sewing-so' target='_blank' rel='noreferrer' className='app current'>
-            <img src={EndLine} className='img-language' alt='html' />
+          <a href='http://10.10.5.62:8000/stock_opname_new/public/index.php' target='_blank' rel='noreferrer' className='app current'>
+            <img src={QrHardware} className='img-language' alt='html' />
             <ul className='app-sub'>
-              <li className='current'>Opname Sewing</li>
+              <li className='current'>Opname</li>
             </ul>
-            <Tooltip className='tooltip' message='Opname Sewing' position='top'/>
+            <Tooltip className='tooltip' message='Opname' position='top'/>
           </a>
           <a href='http://10.10.5.62:8000/stock_opname/public/index.php/packing' target='_blank' rel='noreferrer' className='app current'>
             <img src={PackingLine} className='img-language' alt='html' />
@@ -572,7 +579,7 @@ function AppList() {
             </ul>
             <Tooltip className='tooltip' message='Opname Cutting' position='top'/>
           </a>
-        </div>
+        </div> */}
         
         <div className='close' onClick={openPopUp}><GrClose size={30} /></div>
       </div>
