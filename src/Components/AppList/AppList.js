@@ -180,6 +180,9 @@ function AppList() {
     } else if (link === 'nds') {
       setLocaleLink('http://10.10.5.62:8000/nds_wip')
       setOnlineLink('http://nag.ddns.net:8003/nds_wip')
+    } else if (link === 'opname') {
+      setLocaleLink('http://10.10.5.62:8000/stock_opname_new')
+      setOnlineLink('https://bit.ly/nds-stock-opname')
     } 
 
     linkSelectionRef.current.style.display = 'flex'    
@@ -274,13 +277,13 @@ function AppList() {
           <Tooltip className='tooltip' message='Dashboard untuk Output Sewing' position='top'/>
         </div>
 
-        <a className='app current' href='http://10.10.5.62:8000/stock_opname_new/public/index.php' target='_blank' rel='noreferrer'>
+        <div className='app current' onClick={() => openLinkSelection('opname')} >
           <img src={QrHardware} className='img-language' alt='css' />
           <ul className='app-sub'>
             <li className='current'>Opname</li>
           </ul>
           <Tooltip className='tooltip' message='Aplikasi untuk input Opname' position='top'/>
-        </a>
+        </div>
 
         <a className='app current' style={{ display: 'none' }} href='http://10.10.5.62:8000/nds_simple_docs' target='_blank' rel='noreferrer'>
           <img src={Doc} className='img-language' alt='html' />
