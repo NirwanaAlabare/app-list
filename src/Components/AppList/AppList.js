@@ -46,7 +46,7 @@ function AppList() {
       rejectInOutRef.current.style.display = 'none'
       sewingSecondaryRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'endline') {
       endLineRef.current.style.display = 'flex'
       finishLineRef.current.style.display = 'none'
@@ -58,7 +58,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'finishline') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'flex'
@@ -70,7 +70,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'packingline') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -82,7 +82,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'sewingreport') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -94,7 +94,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'sewingdashboard') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -106,7 +106,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'defectinout') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -118,7 +118,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'rejectinout') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -129,7 +129,7 @@ function AppList() {
       rejectInOutRef.current.style.display = 'flex'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'sewingsecondary') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -141,8 +141,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'flex'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     } else if (selected === 'opname') {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -154,7 +153,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'flex'
+      // opnameRef.current.style.display = 'flex'
     } else {
       endLineRef.current.style.display = 'none'
       finishLineRef.current.style.display = 'none'
@@ -166,7 +165,7 @@ function AppList() {
       sewingSecondaryRef.current.style.display = 'none'
       ndsRef.current.style.display = 'none'
       linkSelectionRef.current.style.display = 'none'
-      opnameRef.current.style.display = 'none'
+      // opnameRef.current.style.display = 'none'
     }
   }
 
